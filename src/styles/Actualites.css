@@ -1,0 +1,15 @@
+.actualite-container {
+     background-color: #f2ede1;
+     padding: 80px clamp(20px, 6vw, 80px);
+     height: auto;
+}
+.actualite-container > div {
+     width: min(100%, 1152px);
+     margin: 0 auto;
+}
+
+@media (max-width: 640px) {
+     .actualite-container {
+          padding: 48px 16px;
+     }
+}

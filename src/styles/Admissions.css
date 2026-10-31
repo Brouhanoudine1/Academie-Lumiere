@@ -1,0 +1,35 @@
+.admission-container {
+     background-color: #0e182b;
+     padding: 30px clamp(16px, 5vw, 64px);
+     height: auto;
+     padding-bottom: 50px;
+}
+.admission-container .formations-header h3 {
+    color: #fff;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+.admission-container .formations-header .formations-intro {
+ font-size: 22px;
+ color: rgb(255 255 255 / 60%);
+ max-width: 650px;
+ line-height: 1.6;
+ margin-bottom: 24px;
+ letter-spacing: 3px;
+}
+
+@media (max-width: 640px) {
+    .admission-container {
+        padding: 40px 16px;
+    }
+
+    .admission-container .formations-header h3 {
+        margin-top: 24px;
+        margin-bottom: 20px;
+    }
+
+    .admission-container .formations-header .formations-intro {
+        font-size: 17px;
+        letter-spacing: 0.04em;
+    }
+}

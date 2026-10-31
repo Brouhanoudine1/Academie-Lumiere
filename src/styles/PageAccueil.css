@@ -1,0 +1,143 @@
+.point-clignotant {
+    animation: blink 2s infinite;
+    width: 10px;
+    height: 10px;
+    background-color: rgb(255, 196, 0);
+    border-radius: 50%;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+.arrow-icone {
+   animation: bounce 3s infinite;
+}
+@keyframes bounce {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(-10px); }
+}
+.parent-cligne {
+    width: fit-content;
+    max-width: 100%;
+    margin: 112px 0 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.parent-cligne p {
+    font-size: clamp(0.8rem, 2.5vw, 1.125rem);
+    text-align: center;
+}
+.page-accueil {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    min-height: 640px;
+    color: #f8fafc;
+    background-color: #0a1426;
+}
+.accueil-background {
+    position: absolute;
+    z-index: -1;
+    inset: -10% 0;
+    background:
+        linear-gradient(90deg, rgba(10, 20, 38, 0.94) 0%, rgba(10, 20, 38, 0.78) 54%, rgba(10, 20, 38, 0.54) 100%),
+        linear-gradient(0deg, rgba(10, 20, 38, 0.62), rgba(10, 20, 38, 0.12)),
+        url('/student.webp') center 42% / cover no-repeat;
+    will-change: transform;
+}
+.accueil-content {
+    position: relative;
+    z-index: 1;
+    width: min(100%, 1280px);
+    margin: 0 auto;
+    padding: 20px clamp(20px, 5vw, 72px) 0;
+}
+.titre h2 {
+    max-width: 100%;
+    line-height: 1.05;
+}
+.texte {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 28px 0 40px;
+    width: min(100%, 620px);
+}
+.texte p {
+    font-size: 1.25rem;
+    text-align: justify;
+    opacity: 0.5;
+    margin-bottom: 20px;
+}
+.defilement-texte {
+    z-index: 1;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    position: relative;
+    height: clamp(120px, 18vw, 240px);
+    margin-top: clamp(64px, 10vw, 150px);
+}
+.accueil-actions {
+    flex-wrap: wrap;
+}
+.accueil-action {
+    min-width: min(100%, 260px);
+    min-height: 52px;
+    transition: box-shadow 0.25s ease, border-color 0.25s ease;
+}
+.accueil-action:hover {
+    box-shadow: 0 12px 32px rgb(251 191 36 / 20%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .accueil-background {
+        will-change: auto;
+    }
+
+    .point-clignotant,
+    .arrow-icone {
+        animation: none;
+    }
+}
+
+@media (max-width: 640px) {
+    .page-accueil {
+        min-height: 600px;
+    }
+
+    .parent-cligne {
+        margin-top: 96px;
+        margin-bottom: 28px;
+        padding: 10px 12px;
+    }
+
+    .texte p {
+        font-size: 1rem;
+        text-align: left;
+    }
+
+    .accueil-actions {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .accueil-action {
+        width: 100%;
+    }
+
+    .defilement-texte {
+        margin-top: 64px;
+    }
+}
+
+@media (max-width: 380px) {
+    .accueil-content {
+        padding-right: 16px;
+        padding-left: 16px;
+    }
+
+    .parent-cligne {
+        margin-top: 88px;
+    }
+}

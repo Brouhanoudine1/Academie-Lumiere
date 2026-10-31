@@ -1,0 +1,24 @@
+{
+    "etapes" : [
+  {
+    "id": 1,
+    "titre": "Candidature en ligne",
+    "description": "Dossier scolaire, CV et lettre de motivation. Réponse sous 5 jours ouvrés."
+  },
+  {
+    "id": 2,
+    "titre": "Entretien de motivation",
+    "description": "Un échange avec un responsable de filière, sur place ou en visio."
+  },
+  {
+    "id": 3,
+    "titre": "Décision & admission",
+    "description": "Notification d'admission, accompagnement dans la recherche d'entreprise."
+  },
+  {
+    "id": 4,
+    "titre": "Inscription & rentrée",
+    "description": "Finalisation du dossier, journée d'intégration et début des cours en septembre."
+  }
+]
+}

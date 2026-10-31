@@ -1,0 +1,65 @@
+{
+  "categories": ["Numérique", "Business", "Création", "Santé"],
+  "formations": [
+    {
+      "id": "dev",
+      "title": "Développement Web & Mobile",
+      "category": "Numérique",
+      "level": "Bac+3",
+      "duration": "3 ans",
+      "rhythm": "Alternance possible",
+      "description": "Front, back, cloud : concevez et déployez des produits numériques utilisés par de vrais clients.",
+      "image": "https://images.unsplash.com/photo-1531545514256-b1400bc00f31?auto=format&fit=crop&w=1600&q=80"
+    },
+    {
+      "id": "data",
+      "title": "Data & Intelligence Artificielle",
+      "category": "Numérique",
+      "level": "Bac+5",
+      "duration": "2 ans",
+      "rhythm": "Alternance",
+      "description": "Machine learning, data engineering et éthique de la donnée avec des cas issus de nos partenaires.",
+      "image": "https://images.unsplash.com/photo-1758270705518-b61b40527e76?auto=format&fit=crop&w=1600&q=80"
+    },
+    {
+      "id": "mgmt",
+      "title": "Management & Entrepreneuriat",
+      "category": "Business",
+      "level": "Bac+5",
+      "duration": "2 ans",
+      "rhythm": "Temps plein",
+      "description": "Pilotez une équipe, lancez une activité et apprenez à décider dans l'incertitude.",
+      "image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1600&q=80"
+    },
+    {
+      "id": "marketing",
+      "title": "Marketing Digital & Communication",
+      "category": "Business",
+      "level": "Bac+3",
+      "duration": "3 ans",
+      "rhythm": "Alternance possible",
+      "description": "Stratégie de marque, contenu, acquisition et mesure de la performance.",
+      "image": "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&w=1600&q=80"
+    },
+    {
+      "id": "design",
+      "title": "Design Graphique & UX",
+      "category": "Création",
+      "level": "Bac+3",
+      "duration": "3 ans",
+      "rhythm": "Temps plein",
+      "description": "De la recherche utilisateur au prototype : un portfolio solide dès la deuxième année.",
+      "image": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1600&q=80"
+    },
+    {
+      "id": "care",
+      "title": "Gestion des Établissements de Santé",
+      "category": "Santé",
+      "level": "Bac+3",
+      "duration": "3 ans",
+      "rhythm": "Alternance",
+      "description": "Organisation, qualité et relation patient au cœur des structures de soin de demain.",
+      "image": "https://images.unsplash.com/photo-1616428394230-ba242d33e3ba?auto=format&fit=crop&w=1600&q=80"
+    }
+  ]
+}

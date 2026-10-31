@@ -1,0 +1,145 @@
+.pied-page {
+  padding: 64px max(24px, calc((100% - 1152px) / 2)) 24px;
+  background: #0e182b;
+  color: #e2e8f0;
+}
+
+.pied-page-contenu {
+  display: grid;
+  grid-template-columns: 1.4fr 0.8fr 1.2fr;
+  gap: 48px;
+  padding-bottom: 48px;
+}
+
+.pied-page-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: #fff;
+  font-family: 'Fraunces', Georgia, serif;
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.pied-page-icone {
+  display: inline-flex;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background: #fbbf24;
+  color: #0e182b;
+}
+
+.pied-page-identite > p {
+  max-width: 320px;
+  margin-top: 16px;
+  color: #aab4c3;
+  line-height: 1.7;
+}
+
+.pied-page h2 {
+  margin: 4px 0 18px;
+  color: #fbbf24;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.pied-page-navigation ul {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.pied-page-navigation a,
+.pied-page-coordonnees a,
+.pied-page-retour {
+  color: #cbd5e1;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.pied-page-navigation a:hover,
+.pied-page-coordonnees a:hover,
+.pied-page-retour:hover {
+  color: #fbbf24;
+}
+
+.pied-page-coordonnees {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+  font-style: normal;
+}
+
+.pied-page-coordonnees h2 {
+  margin-bottom: 4px;
+}
+
+.pied-page-coordonnees a,
+.pied-page-coordonnees p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  overflow-wrap: anywhere;
+}
+
+.pied-page-coordonnees svg {
+  flex: 0 0 auto;
+  color: #fbbf24;
+}
+
+.pied-page-bas {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  border-top: 1px solid rgb(203 213 225 / 18%);
+  padding-top: 20px;
+  color: #94a3b8;
+  font-size: 13px;
+}
+
+.pied-page-retour {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+}
+
+@media (max-width: 720px) {
+  .pied-page {
+    padding: 48px 24px 20px;
+  }
+
+  .pied-page-contenu {
+    grid-template-columns: 1fr 1fr;
+    gap: 36px 24px;
+  }
+
+  .pied-page-identite {
+    grid-column: 1 / -1;
+  }
+
+  .pied-page-bas {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 420px) {
+  .pied-page-contenu {
+    grid-template-columns: 1fr;
+  }
+
+  .pied-page-identite {
+    grid-column: auto;
+  }
+}
